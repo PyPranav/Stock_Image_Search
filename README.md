@@ -9,3 +9,9 @@ https://pixabay.com/service/about/api/
 ## Hosted Site
 https://pypranav.pythonanywhere.com/images/
   
+## Installation  
+Use git clone to install it on local machine.
+```bash
+git clone https://github.com/PyPranav/Stock_Image_Search
+pip install -r requirements.txt
+```
