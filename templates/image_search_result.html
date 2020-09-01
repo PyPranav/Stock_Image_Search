@@ -1,0 +1,20 @@
+{% extends 'image_search_home.html' %}
+{% load static %}
+{% block body %}
+<div class="row justify-content-center" style=" margin: 20px;" id = 'result_container'> 
+    <script src="{% static 'image_search.js' %}?{% now "U" %}""></script>
+</div>
+{% endblock body %}
+
+
+
+
+<!-- <div class="row justify-content-center" style=" margin: 20px;">
+    <div class="card" style="width: 20rem;  margin: 20px;">
+        <img src="https://pixabay.com/get/52e2d7404353ad14f1dc846096293f7f153ad7e35a4c704c7c2773d09349c25a_640.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+        <a href='https://pixabay.com/get/52e2d7404353ad14f6da8c7dda793676143fdbec55586c48702673dc9349c15fba_1280.jpg?attachment'>
+            <button  class="btn btn-primary centre" >Go somewhere</button> </a>
+        </div>
+    </div>   
+</div> -->

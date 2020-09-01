@@ -1,0 +1,49 @@
+body{
+    background-color: #B0DFF4;
+}
+
+
+
+.welcome{
+	width: 100%;
+	height: auto;
+}
+.card .btn{
+	position: absolute;
+	top: 15%;
+	left: 10%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+  }
+
+@media screen and (min-width: 1000px){
+.card-img-top{
+	height: 25rem;
+	width: auto;
+
+}
+.img{
+	width: 62%;
+	height: auto;
+}
+.welcome{
+	width: 70%;
+	height: auto;
+}
+.card-img-top:hover + .btn{
+	visibility: visible;
+  } 
+  
+  .card .btn{
+	position: absolute;
+	top: 10%;
+	left: 2.7vw;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	visibility: hidden;
+  }
+  .btn:hover{
+	visibility: visible;
+  }
+}
+
