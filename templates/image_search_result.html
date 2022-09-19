@@ -2,19 +2,21 @@
 {% load static %}
 {% block body %}
 <div class="row justify-content-center" style=" margin: 20px;" id = 'result_container'> 
-    <script src="{% static 'image_search.js' %}?{% now "U" %}""></script>
+    {% if l!=0 %}
+        {% for data in Data %}
+             <div class="row justify-content-center" style="margin: 20px;">
+                        <div class="card mb-3">
+                            
+                            <img class="card-img-top" src="{{data.webformatURL}}"/>
+                            
+                            
+                            <a href="{{data.largeImageURL}}?attachment" class="btn btn-primary rounded-circle"><i class="fas fa-download"></i></a>
+                            
+                        </div>
+                    </div>
+        {% endfor %}
+    {% else %}
+        <img src='https://lh3.googleusercontent.com/pw/ACtC-3cCAnIragkIIy7_qEkD1rSAyUa9R4pFJ4EaHIx2GYjysgRiaaLAUl-JJX15-ZmVcVHFfGg8FeZjzPKsJcuJO5VPCAH4k91B6jyF5gbSj1H31OlRDDXxM9A24FKPDBILdPw1N06o5iq3i9w65aKgIOpV=w1509-h938-no?authuser=0' class='img'>
+    {% endif %}
 </div>
 {% endblock body %}
-
-
-
-
-<!-- <div class="row justify-content-center" style=" margin: 20px;">
-    <div class="card" style="width: 20rem;  margin: 20px;">
-        <img src="https://pixabay.com/get/52e2d7404353ad14f1dc846096293f7f153ad7e35a4c704c7c2773d09349c25a_640.jpg" class="card-img-top" alt="...">
-        <div class="card-body text-center">
-        <a href='https://pixabay.com/get/52e2d7404353ad14f6da8c7dda793676143fdbec55586c48702673dc9349c15fba_1280.jpg?attachment'>
-            <button  class="btn btn-primary centre" >Go somewhere</button> </a>
-        </div>
-    </div>   
-</div> -->
