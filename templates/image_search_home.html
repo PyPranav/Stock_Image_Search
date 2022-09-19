@@ -20,7 +20,7 @@
     <!-- Search Box -->
     <div>
 		<div>
-			<form action="result" method="post" enctype="multipart/form-data" >
+			<form action="result" method="get" enctype="multipart/form-data" >
                 {% csrf_token %}
 				<div>
 					<input name='search-box' class="form-control rounded-pill" type="search" placeholder="Search Anything" required >
